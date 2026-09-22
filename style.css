@@ -1,4 +1,23 @@
 body{
+    margin: 0%;
     background: radial-gradient(rgb(234, 207, 106), rgb(223, 154, 43));
     background-attachment: fixed;
 } 
+#upper-div{
+    position: absolute;
+    display: flex;
+    background: linear-gradient( rgb(242, 177, 112) 90%,rgba(158, 84, 27, 0.827));
+    width: 100%;
+    height: 160px;
+}
+
+#downloadimg{
+    position: absolute;
+    border: solid 1px red;
+    justify-content: center;
+    align-content: center;
+    top: 30px;
+    right: 100px;
+    scale: 4;
+    image-rendering: pixelated;
+}
