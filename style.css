@@ -11,12 +11,24 @@ body{
     height: 120px;
     padding-bottom: 20px;
 }
+#mocondotxt{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    left: 50%;
+    translate: -50%;
+    pointer-events: none;
+    background: url(img/Macondo\,\ build\ hardware\ or\ software\,\ ship\ it\,\ get\ rewarded\ _\ Macondo\ -\ Google\ Chrome\ 20-05-2026\ 15_42_05.png);
+    background-size: cover;
+    filter: drop-shadow(0 0 4px rgb(169, 137, 22));
+}
 #downloadbutton{
     border: none;
     position: absolute;
     width: 390px;
+    transition: 0.5;
     height: 230px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     background: none;
@@ -35,14 +47,30 @@ body{
     image-rendering: pixelated;
 }
 #downloadbutton::after{
+    transition: 0.3s;
     content: "PLAY NOW!";
     font-size: 40px;
+    font-family:"myfonts";
+    font-size: 65px;
+    color: rgba(133, 222, 0, 0.959);
+    -webkit-text-stroke: rgb(2, 166, 2) 2px ;
+    filter: drop-shadow(0 0 3px green);
     position: absolute;
     top: 50%;
     left: 50%;
     pointer-events: none;
-    
+    white-space: nowrap;
     transform: translate(-50%,-50%)
+}
+#downloadbutton:hover::after{
+    transition: 0.2s;
+    font-size: 70px;
+    -webkit-text-stroke: rgb(255, 255, 255) 2px ;
+    filter: drop-shadow(0 0 7px rgb(249, 255, 249));
+}
+#downloadbutton:active::after{
+    font-size: 55px;
+    color: rgb(1, 77, 1);
 }
 #downloadimg:hover{
 
@@ -75,6 +103,7 @@ body{
     transition: 0.3s;
     position: absolute;
     z-index: -1;
+    min-height: 100%;
     min-width: 100%;
     
 }
@@ -89,10 +118,42 @@ body{
 @keyframes button {
     from{
         opacity: 0;
-        translate: 0 200px;
+        translate: -20 200px;
+        scale: 0;
+        height: 0px;
     }
     to{
+        height: 250px;
+        scale: 1.1;
         opacity: 1;
         translate: 0 0;
     }
+}
+#about{
+
+}
+#about h1{
+    
+    position: absolute;
+    left: 50px;
+    translate: 0 -50%;
+    font-family: "regular";
+    font-size: 80px;
+    color: brown;
+}
+#about p{
+    position: relative;
+    border: solid 1px red;
+    width: 50%;
+    translate: 0 -50%;
+    top: 200px;
+    left: 50%;
+}
+@font-face {
+    font-family: "myfonts";
+    src: url(fonts/vladimir.ttf) format(truetype);
+}
+@font-face {
+    font-family: "regular";
+    src: url(fonts/Regular.otf);
 }
