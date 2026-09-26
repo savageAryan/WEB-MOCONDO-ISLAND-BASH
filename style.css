@@ -16,6 +16,50 @@ body{
     border-bottom-right-radius: 30px;
     justify-content: center;
 }
+#nav-logs{
+    position: absolute;
+    bottom: 10px;
+    left: 55%;
+    width: 500px;
+    height: 100%;
+    border: 1px red solid;
+    font-size: larger;
+    color: rgb(255, 203, 139);
+}
+#nav-logs::after{
+    content: "Mocondo ISLAND bash is a Hackclub Mocondo Event Themed game,You are Trapped on an island called "MOCONDO" it's a magical island,with different talking animals some are friendly some not so much";
+    position: relative;
+    top: 5px;
+    font-size: x-small;
+    font-size: 13px;
+    white-space: nowrap;
+    color: rgba(17, 8, 1, 0.944);
+    display: block;
+}
+#nav-logs::before{
+    position: relative;
+    color: red;
+    content: "(pre-release 0.1)";
+    display: inline-block;
+    font-size: 15px;
+}
+#upper-div button{
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    background: radial-gradient(rgb(252, 217, 156) 60%, rgb(238, 187, 100));
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px rgb(141, 66, 9) solid;
+    font-weight: 600;
+    font-size: large;
+    font-style: oblique;
+    color: red;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-radius: 20px;
+    right: 40px;
+    bottom: 10px;
+}
 .fa-angles-down{
     position: absolute;
     width: 30px;
@@ -32,17 +76,11 @@ body{
     height: 70px;
 
 }
-#upper-div:actie{
-    transition: 0.4s ease-out;
-    height: 400px;
-    border-bottom-right-radius: 70px;
-    border-bottom-left-radius: 70px;
-    
-}
 #upper-div.stretching{
     animation: stretch 0.7s ease-out;
 }
 #upper-div.stretched{
+    cursor: auto;
     height: 400px;
 }
 @keyframes stretch {
@@ -51,6 +89,7 @@ body{
     
 }
 .fa-angles-down:hover{
+    transform: scaleX(1.9);
     transition: 0.2s;
     color: brown;
     bottom: 20px;
