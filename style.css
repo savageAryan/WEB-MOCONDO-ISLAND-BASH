@@ -59,6 +59,19 @@ body{
     border-radius: 20px;
     right: 40px;
     bottom: 10px;
+    
+}
+#upper-div button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: larger;
+    scale: 0.95;
+    background: radial-gradient(rgb(255, 212, 137) 60%, rgb(201, 160, 89));
+    outline: 1px grey solid;
+    outline-offset: 4px;
+}
+#upper-div button:active{
+     background: radial-gradient(rgb(201, 154, 74) 60%, rgb(237, 194, 119));
 }
 .fa-angles-down{
     position: absolute;
