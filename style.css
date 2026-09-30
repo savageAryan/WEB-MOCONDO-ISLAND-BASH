@@ -18,30 +18,33 @@ body{
 }
 #nav-logs{
     position: absolute;
-    bottom: 10px;
     left: 55%;
+    border: 1px red solid;
     width: 500px;
     height: 100%;
-    border: 1px red solid;
     font-size: larger;
     color: rgb(255, 203, 139);
 }
+#nav-logs.stretched{
+    transition: 0.1s ease-out;
+    left: 10px;
+}
 #nav-logs::after{
-    content: "Mocondo ISLAND bash is a Hackclub Mocondo Event Themed game,You are Trapped on an island called "MOCONDO" it's a magical island,with different talking animals some are friendly some not so much";
-    position: relative;
-    top: 5px;
-    font-size: x-small;
+    content: "Mocondo ISLAND bash is a Hackclub Mocondo Event Themed game,You are Trap ....";
+    color: rgb(43, 14, 0);
+    -webkit-text-stroke: 1px rgb(57, 4, 4);
     font-size: 13px;
-    white-space: nowrap;
-    color: rgba(17, 8, 1, 0.944);
     display: block;
 }
 #nav-logs::before{
     position: relative;
     color: red;
+    right: 10px;
     content: "(pre-release 0.1)";
-    display: inline-block;
     font-size: 15px;
+}
+#upper-div:hover #nav-logs{
+    
 }
 #upper-div button{
     width: 150px;
