@@ -25,10 +25,26 @@ body{
     font-size: larger;
     color: rgb(255, 203, 139);
 }
+#nav-logs.stretching{
+    display: none;
+}
 #nav-logs.stretched{
+    font-size: 40px;
     transition: 0.1s ease-out;
     left: 10px;
 }
+.content{
+    display: none;
+}
+#nav-logs.stretched .content{
+    display: block;
+    width: 400px;
+    position: relative;
+    top: 20px;
+}
+#nav-logs.stretched #nav-logs::after{
+    font-size: 50px;
+} 
 #nav-logs::after{
     content: "Mocondo ISLAND bash is a Hackclub Mocondo Event Themed game,You are Trap ....";
     color: rgb(43, 14, 0);
@@ -230,16 +246,19 @@ body{
     }
 }
 #about{
-
+    margin:0%;
+    height: 400px;
+    background: radial-gradient(transparent 70%, rgba(48, 3, 61, 0.553));
 }
 #about h1{
     
     position: absolute;
-    left: 50px;
-    translate: 0 -50%;
+    left: 50%;
+    translate: -50%;
     font-family: "regular";
-    font-size: 80px;
-    color: brown;
+    font-size: 110px;
+    color: rgb(19, 128, 45);
+    -webkit-text-stroke: 2px rgb(63, 150, 22);
 }
 #about p{
     position: relative;

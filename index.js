@@ -6,12 +6,13 @@ upperdiv.addEventListener("mousedown",()=>{
     streached = false
     console.log("mousedown1")
     upperdiv.classList.add("stretching")
+    navlogs.classList.add("stretching")
     holdtime = setTimeout(() => {
         console.log("mousedown")
         streached = true
         upperdiv.classList.remove("stretching")
         upperdiv.classList.add("stretched")
-        console.log(streached)
+        navlogs.classList.remove("stretching")
         navlogs.classList.add("stretched")
     },300);
 });
@@ -20,6 +21,7 @@ upperdiv.addEventListener("mouseup",()=>{
     if(!streached) {
         upperdiv.classList.remove("stretching")
         upperdiv.classList.remove("stretched")
+        navlogs.classList.remove("stretching")
         navlogs.classList.remove("stretched")
     }
     
