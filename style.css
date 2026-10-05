@@ -90,7 +90,7 @@ body{
     outline-offset: 4px;
 }
 #upper-div button:active{
-     background: radial-gradient(rgb(201, 154, 74) 60%, rgb(237, 194, 119));
+    background: radial-gradient(rgb(201, 154, 74) 60%, rgb(237, 194, 119));
 }
 .fa-angles-down{
     position: absolute;
@@ -248,23 +248,52 @@ body{
 #about{
     margin:0%;
     height: 400px;
-    background: radial-gradient(transparent 70%, rgba(48, 3, 61, 0.553));
+
 }
 #about h1{
-    
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+    width: 900px;
+    pointer-events: none;
+    background: radial-gradient(closest-side  ,rgb(247, 219, 117),transparent);
     position: absolute;
     left: 50%;
     translate: -50%;
     font-family: "regular";
     font-size: 110px;
     color: rgb(19, 128, 45);
+     transform: rotateZ(-4deg) skewX(-6deg);
     -webkit-text-stroke: 2px rgb(63, 150, 22);
 }
 #about p{
     position: relative;
-    border: solid 1px red;
-    width: 50%;
-    top: 200px;
+    left: 30px;
+    font-family: "write";
+    transform: rotateZ(15deg) skewX(-14deg);
+    font-size: 40px;
+    width: 900px;
+    color: rgb(122, 78, 1);
+    -webkit-text-stroke: 1px rgb(92, 13, 13);
+    top: 270px;
+}
+#imagediv img{
+    z-index: -1;
+    position: relative;
+    right: 300px;
+    width: 600px;
+    transform: rotateZ(15deg) skewX(6deg);
+    height: 400px;
+}
+#imagediv{
+    z-index: -1;
+    position: absolute;
+    right: 30px;
+    width: 650px;
+    height: 450px;
+    background: radial-gradient(rgb(201, 154, 74) 60%, rgb(237, 194, 119));
+    border-radius: 5px;
+    border: rgb(194, 148, 11) 4px solid;
 }
 @font-face {
     font-family: "myfonts";
@@ -273,4 +302,8 @@ body{
 @font-face {
     font-family: "regular";
     src: url(fonts/Regular.otf);
+}
+@font-face {
+    font-family: "write";
+    src: url(fonts/Pingwin.ttf);
 }
