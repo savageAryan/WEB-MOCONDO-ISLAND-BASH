@@ -246,12 +246,16 @@ body{
     }
 }
 #about{
+    position: absolute;
     margin:0%;
-    height: 400px;
+    background: linear-gradient( rgba(138, 96, 22, 0.738) 20px,transparent 6%, rgba(138, 96, 22, 0.738) 97%, transparent);
+    height: 700px;
+    width: 100%;
 
 }
 #about h1{
     text-align: center;
+    position: absolute;
     line-height: 200px;
     height: 200px;
     width: 900px;
@@ -263,8 +267,20 @@ body{
     font-family: "regular";
     font-size: 110px;
     color: rgb(19, 128, 45);
-     transform: rotateZ(-4deg) skewX(-6deg);
+    transform: rotateZ(-4deg) skewX(-6deg);
     -webkit-text-stroke: 2px rgb(63, 150, 22);
+}
+#about h1.arranged{
+    left: 30px;
+    translate: 0;
+    transform: none;
+}
+#about p.arranged{
+    transform: none;
+
+}
+#about p::after.arranged{
+    transform: none;
 }
 #about p{
     position: relative;
@@ -277,8 +293,20 @@ body{
     -webkit-text-stroke: 1px rgb(92, 13, 13);
     top: 270px;
 }
+#about p::after{
+    position: relative;
+    font-size: 20px;
+    content: "MocondoIslandBash is a pixelart based Survival-fantasy game set on a magical island inhabited by talking animals. Explore, farm, collect fruit, fight creatures, trade items, and discover the strange life of Mocondo. This is an first pre-release build that will continue to receive updates.";
+    display: block;
+    left: 200px;
+    top: 200px;
+    transform: rotateZ(-50deg) skewX(30deg);
+    white-space: no-wrap;
+    color: rgb(98, 31, 3);
+    width: 360px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
 #imagediv img{
-    z-index: -1;
     position: relative;
     right: 300px;
     width: 600px;
@@ -286,9 +314,9 @@ body{
     height: 400px;
 }
 #imagediv{
-    z-index: -1;
     position: absolute;
     right: 30px;
+    bottom: 100px;
     width: 650px;
     height: 450px;
     background: radial-gradient(rgb(201, 154, 74) 60%, rgb(237, 194, 119));
