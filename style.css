@@ -277,6 +277,7 @@ body{
     position: relative;
     left: -60px;
     translate: 0;
+    text-decoration: underline 6px rgba(216, 136, 16, 0.388);
     transition: 0.2s ease-out;
     transform: none;
 }
@@ -335,8 +336,14 @@ body{
     transition: 0.2s ease-out;
     position: absolute;
     top: 20px;
-    box-shadow: 0 0 10px brown;
+    box-shadow: -5px 0 40px rgb(116, 92, 3);
     right: 20px;
+}
+#imagediv img:hover{
+    transition: 0.2s ease-in;
+    cursor: pointer;
+    outline: solid 5px rgba(146, 101, 17, 0.533);
+    outline-offset: 5px;
 }
 #imagediv{
     transition: 0.2s ease-out;

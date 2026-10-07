@@ -54,5 +54,23 @@ aboutcon.forEach(content =>{
     })
 })
 
+let images = ["img/image.png",
+    "img/image.png",
+    "img/image1.png",]
+let currentimage = 0;
+let hovertime = null;
+    
 
+const aboutimg = document.querySelector("#imagediv img")
+aboutimg.addEventListener("mouseenter",()=>{
+    if(hovertime) clearInterval(hovertime);
 
+    hovertime = setInterval(() => {
+        currentimage = (currentimage + 1) % images.length;
+        aboutimg.src = images[currentimage];
+
+    },700);
+});
+aboutimg.addEventListener("mouseleave",()=>{
+    clearInterval(hovertime)
+})
