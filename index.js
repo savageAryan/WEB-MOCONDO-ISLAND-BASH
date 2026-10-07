@@ -44,11 +44,15 @@ const navlogs = document.getElementById("nav-logs")
 console.log(navlogs)
 const aboutsec = document.getElementById("about")
 const aboutcon = document.querySelectorAll(".aboutcon")
-aboutsec.addEventListener("mouseenter",()=>{
-    aboutcon.classList.add("arranged")
+aboutcon.forEach(content =>{
+    aboutsec.addEventListener("mouseenter",()=>{
+    content.classList.add("arranged")
+    console.log("loloput")
+    })
+    aboutsec.addEventListener("mouseleave",()=>{
+    content.classList.remove("arranged")
+    })
 })
-aboutsec.addEventListener("mouseleave",()=>{
-    aboutcon.classList.remove("arranged")
-})
+
 
 
