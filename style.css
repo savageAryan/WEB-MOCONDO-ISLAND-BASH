@@ -1,4 +1,5 @@
 body{
+    position: relative;
     margin: 0%;
     background: radial-gradient(rgb(234, 207, 106), rgb(223, 154, 43));
     background-attachment: fixed;
@@ -247,7 +248,6 @@ body{
 }
 #about{
     position: absolute;
-    margin:0%;
     background: linear-gradient( rgba(138, 96, 22, 0.738) 20px,transparent 6%, rgba(138, 96, 22, 0.738) 97%, transparent);
     height: 700px;
     width: 100%;
@@ -355,6 +355,32 @@ body{
     background: radial-gradient(rgb(201, 154, 74) 60%, rgb(237, 194, 119));
     border-radius: 5px;
     border: rgb(194, 148, 11) 4px solid;
+}
+#mobs{
+    position: relative;
+    top: 700px;
+}
+#mobs h1{
+    border: solid 1px red;
+    font-size: 50px;
+}
+#iconholder{
+    position: absolute;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3 , 200px) ;
+    border: solid 1px red;
+    width: 1300px;
+    height: 600px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+#ids{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: blue 3px solid;
 }
 @font-face {
     font-family: "myfonts";
