@@ -366,21 +366,47 @@ body{
 }
 #iconholder{
     position: absolute;
-    padding: 30px;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
-    grid-template-rows: repeat(3 , 200px) ;
+    grid-template-columns: repeat(3, 1fr);
+    
+    padding: 45px;
+    padding-top: 20px;
+    gap: 30px;
     border: solid 1px red;
-    width: 1300px;
-    height: 600px;
+    max-width: 1300px;
     left: 50%;
     transform: translate(-50%,0);
 }
 #ids{
-    position: absolute;
-    width: 200px;
-    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 450px;
     border: blue 3px solid;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+#ids:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 0 10px brown;
+    scale: 1.07;
+}
+#ids h3{
+    color: brown;
+    font-family: "myfonts";
+    font-size: 40px;
+}
+#ids img{
+    image-rendering: pixelated;
+    width: 100%;
+    height: 330px;
+    border: 1px red solid;
+}
+@font-face {
+    font-family: "stylish";
+    src: url(fonts/CircusOrnate.ttf);
 }
 @font-face {
     font-family: "myfonts";
