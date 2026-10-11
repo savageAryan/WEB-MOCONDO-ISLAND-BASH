@@ -74,3 +74,17 @@ aboutimg.addEventListener("mouseenter",()=>{
 aboutimg.addEventListener("mouseleave",()=>{
     clearInterval(hovertime)
 })
+const ids = document.querySelectorAll(".ids")
+const bg = document.getElementById("bg")
+const cross = document.getElementById("cross")
+ids.forEach(id =>{
+    id.addEventListener("click",()=>{
+        console.log("papits")
+        bg.classList.add("show")
+    })
+
+})
+
+cross.addEventListener("click",()=>{
+    bg.classList.remove("show")
+})
