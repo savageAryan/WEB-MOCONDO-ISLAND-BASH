@@ -74,12 +74,54 @@ aboutimg.addEventListener("mouseenter",()=>{
 aboutimg.addEventListener("mouseleave",()=>{
     clearInterval(hovertime)
 })
+const mobs = {
+    capybara:{
+        name: "capybara",
+        image: "img/capybara.png",
+        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+    },
+    glowfly:{
+        name: "capybara",
+        image: "img/.png",
+        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+    },
+    penny:{
+        name: "Penny",
+        image: "img/penny.png",
+        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+    },
+    theblob:{
+        name: "Blob",
+        image: "img/blob.png",
+        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+    },
+    chicken:{
+        name: "Farmer Chicken",
+        image: "img/chicken.png",
+        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+    },
+    monkeyking:{
+        name: "MonkeyKing",
+        image: "img/monkeysolo.png",
+        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+    }
+}
 const ids = document.querySelectorAll(".ids")
+const idimg = document.getElementById("idimg")
+const idname = document.querySelector("#popup h2")
+const iddis = document.querySelector("#popup p")
 const bg = document.getElementById("bg")
 const cross = document.getElementById("cross")
 ids.forEach(id =>{
     id.addEventListener("click",()=>{
-        console.log("papits")
+        const mobid = id.dataset.mob;
+        const mob = mobs[mobid]
+        console.log(iddis)
+        idimg.src = mob.image
+        idname.textContent = mob.name
+        iddis.textContent = mob.discription
+
+
         bg.classList.add("show")
     })
 
@@ -88,3 +130,5 @@ ids.forEach(id =>{
 cross.addEventListener("click",()=>{
     bg.classList.remove("show")
 })
+
+
