@@ -3,12 +3,11 @@ const extender = document.querySelector(".fa-angles-down")
 let holdtime;
 streached = false;
 upperdiv.addEventListener("mousedown",()=>{
+    if(streached) return
     streached = false
-    console.log("mousedown1")
     upperdiv.classList.add("stretching")
     navlogs.classList.add("stretching")
     holdtime = setTimeout(() => {
-        console.log("mousedown")
         streached = true
         upperdiv.classList.remove("stretching")
         upperdiv.classList.add("stretched")
@@ -26,18 +25,21 @@ upperdiv.addEventListener("mouseup",()=>{
     }
     
 })
+console.log(extender)
+extender.addEventListener("click",()=>{
+    console.log("cc")
+})
 upperdiv.addEventListener("mouseleave",()=>{
     clearTimeout(holdtime)
     if(streached){
         upperdiv.classList.remove("stretching")
     }
 });
-extender.addEventListener("clicked",() => {
-    if(streached){
-        upperdiv.classList.remove("stratching")
-        upperdiv.classList.remove("stretched")
-
-    }
+extender.addEventListener("click",()=>{
+    console.log("lol222")
+    upperdiv.classList.remove("stretching")
+    upperdiv.classList.remove("stretched")
+    navlogs.classList.remove("stretched")
     
 })
 const navlogs = document.getElementById("nav-logs")

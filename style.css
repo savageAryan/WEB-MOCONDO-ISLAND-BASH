@@ -102,6 +102,7 @@ body{
     filter: drop-shadow(0 0 6px rgb(51, 26, 0));
     transform: scaleX(1.5);
     bottom: 10px;
+    border: 1px red solid;
 }
 #upper-div:hover{
     transition: 0.3s;
@@ -113,7 +114,6 @@ body{
     animation: stretch 0.7s ease-out;
 }
 #upper-div.stretched{
-    cursor: auto;
     height: 400px;
 }
 @keyframes stretch {
@@ -122,12 +122,13 @@ body{
     
 }
 .fa-angles-down:hover{
-    transform: scaleX(1.9);
+    z-index: 999;
+    transform: scaleX(1.9) translateY(20px);
     transition: 0.2s;
     color: brown;
-    bottom: 20px;
 }
 #upper-div.stretched>.fa-angles-down{
+    z-index: 999;
     rotate: 180deg;
 }
 #mocondotxt{
@@ -509,7 +510,7 @@ body{
     to{
         transform: rotateY(0deg) translate(0 ,0);
         opacity: 1;
-        scale: 1;
+        scale: 1.2;
     }
     
 }
