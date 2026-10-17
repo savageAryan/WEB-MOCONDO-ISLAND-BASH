@@ -3,6 +3,7 @@ body{
     margin: 0%;
     background: radial-gradient(rgb(234, 207, 106), rgb(223, 154, 43));
     background-attachment: fixed;
+    padding: 0px;
 } 
 #upper-div{
     transition: 0.5s ease-out;
@@ -509,16 +510,61 @@ body{
     background: linear-gradient(rgb(79, 19, 7) 100px, rgb(176, 94, 26));
 }
 #aboutme h2{
-    color: red;
+    position: relative;
+    font-size: 60px;
+    left: 20px;
+    pointer-events: none;
+    -webkit-tap-highlight-color: brown;
+    width: 600px;
+    color: rgba(114, 4, 4, 0.81);
+    -webkit-text-stroke: 1px red;
 }
 #aboutme img{
     position: absolute;
+    top: 50px;
     right:20px;
     filter: drop-shadow(5px 5px 10px black);
     border: 4px solid rgb(130, 49, 12);
     width: 300px;
-    box-shadow: 0px 0px 20px black;
-    animation: rotate 2s alternate-reverse infinite;
+    box-shadow: 0px 0px 20px black, inset 0px 0px 20px brown;
+    animation: rotate 3s alternate infinite;
+}
+#holder{
+    position:absolute;
+    left: 50%;
+    display: flex;
+    flex-direction: row;
+    border: 1px red solid;
+    bottom: 20px;
+    translate: -50%;
+    width: 400px;
+    height: 100px;
+}
+#socials{
+    position: relative;
+    border: 1px blue solid;
+    left: 50%;
+    translate: -50%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 60px;
+}
+.fa-github{
+    width: 20px;
+    scale: 4;
+}
+.fa-slack{
+    width: 20px;
+    scale: 4;
+}
+#holder i{
+    scale: 5;
+    color: rgba(141, 83, 8, 0.741);
+}
+.fa-envelope{
+    width: fit-content2opx;
+    scale: 4;
 }
 @keyframes rotate {
     from{border-radius: 50% 120%;}
