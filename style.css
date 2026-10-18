@@ -504,7 +504,8 @@ body{
 }
 #aboutme{
     position: relative;
-    border-top: 10px rgb(62, 11, 0) solid;
+    border-top: 30px rgb(62, 11, 0) solid;
+    border-bottom: 30px rgb(95, 32, 18) solid;
     height: 400px;
     top: 1700px;
     background: linear-gradient(rgb(79, 19, 7) 100px, rgb(176, 94, 26));
@@ -515,9 +516,11 @@ body{
     left: 20px;
     pointer-events: none;
     -webkit-tap-highlight-color: brown;
+    user-select: none;
     width: 600px;
+    font-family: "chalk";
     color: rgba(114, 4, 4, 0.81);
-    -webkit-text-stroke: 1px red;
+    -webkit-text-stroke: 1px rgb(255, 238, 238);
 }
 #aboutme img{
     position: absolute;
@@ -533,16 +536,13 @@ body{
     position:absolute;
     left: 50%;
     display: flex;
-    flex-direction: row;
-    border: 1px red solid;
-    bottom: 20px;
+    bottom: 30px;
     translate: -50%;
+    flex-direction: column;
     width: 400px;
-    height: 100px;
 }
 #socials{
     position: relative;
-    border: 1px blue solid;
     left: 50%;
     translate: -50%;
     display: flex;
@@ -550,21 +550,45 @@ body{
     align-items: center;
     gap: 60px;
 }
-.fa-github{
+
+#holder a{
+    scale: 4;
     width: 20px;
-    scale: 4;
+    color: rgba(89, 32, 7, 0.741);
 }
-.fa-slack{
-    width: 20px;
-    scale: 4;
+#holder a:hover{
+    color: rgba(54, 16, 0, 0.741);
 }
-#holder i{
-    scale: 5;
-    color: rgba(141, 83, 8, 0.741);
+#holder a:active{
+    transition: 0.12s ease-out;
+    scale: 3.8;
+    color: rgba(96, 60, 45, 0.741);
+    translate: 0px -3px;
 }
-.fa-envelope{
-    width: fit-content2opx;
-    scale: 4;
+#holder h3{
+    position: relative;
+    text-align: center;
+    user-select: none;
+    font-size: 40px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.163);
+    font-family: "pixel";
+    color: rgba(43, 17, 0, 0.686);
+    top: 0px;
+}
+#holder h3:hover{
+    -webkit-text-stroke: 1px rgba(116, 11, 11, 0.653);
+}
+#holder h3:active{
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.849);
+}
+#aboutme p{
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    font-size: larger;
+    font-weight: 900;
+    width: 400px;
+    color: rgb(51, 16, 0);
 }
 @keyframes rotate {
     from{border-radius: 50% 120%;}
@@ -572,6 +596,9 @@ body{
         border-radius: 120% 50%;
     }
     
+}
+.hidden-highlight::selection {
+    background: transparent;
 }
 @keyframes popup {
     from{
