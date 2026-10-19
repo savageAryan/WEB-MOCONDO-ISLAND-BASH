@@ -1,5 +1,6 @@
 const upperdiv = document.getElementById("upper-div")
-const extender = document.querySelector(".fa-angles-down")
+const extender = document.querySelector("#extender")
+const dis = document.getElementById("dis")
 let holdtime;
 streached = false;
 upperdiv.addEventListener("mousedown",()=>{
@@ -13,6 +14,8 @@ upperdiv.addEventListener("mousedown",()=>{
         upperdiv.classList.add("stretched")
         navlogs.classList.remove("stretching")
         navlogs.classList.add("stretched")
+        dis.classList.add("stretched")
+        dis.textContent = "Mocondo ISLAND bash is a Hackclub Mocondo Event Themed game,You are Trapped on an island called MOCONDO it's a magical island,with different talking animals some are friendly some not so much,You have to survive and escape to Human world"
     },300);
 });
 upperdiv.addEventListener("mouseup",()=>{
@@ -22,12 +25,9 @@ upperdiv.addEventListener("mouseup",()=>{
         upperdiv.classList.remove("stretched")
         navlogs.classList.remove("stretching")
         navlogs.classList.remove("stretched")
+        dis.classList.remove("stretched")
     }
     
-})
-console.log(extender)
-extender.addEventListener("click",()=>{
-    console.log("cc")
 })
 upperdiv.addEventListener("mouseleave",()=>{
     clearTimeout(holdtime)
@@ -36,14 +36,14 @@ upperdiv.addEventListener("mouseleave",()=>{
     }
 });
 extender.addEventListener("click",()=>{
-    console.log("lol222")
     upperdiv.classList.remove("stretching")
     upperdiv.classList.remove("stretched")
     navlogs.classList.remove("stretched")
+    dis.classList.remove("stretched")
+    streached = false
     
 })
 const navlogs = document.getElementById("nav-logs")
-console.log(navlogs)
 const aboutsec = document.getElementById("about")
 const aboutcon = document.querySelectorAll(".aboutcon")
 aboutcon.forEach(content =>{
