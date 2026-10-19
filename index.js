@@ -135,8 +135,5 @@ ids.forEach(id =>{
 cross.addEventListener("click",()=>{
     bg.classList.remove("show")
 })
-const glowfly = document.ElementById("glowfly")
- document.addEventListener("mousemove",()=>{
-    var mousex = 
- })
+
 

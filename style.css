@@ -5,6 +5,59 @@ body{
     background-attachment: fixed;
     padding: 0px;
 } 
+.glowfly{
+    z-index: 999;
+}
+#glowfly1{
+    position: absolute;
+    bottom: 900px;
+    scale: 1.4;
+    right: 100px;
+    rotate: 23deg;
+}
+#glowfly1{
+    position: absolute;
+    bottom: 900px;
+    scale: 1.4;
+    left: 500px;
+    rotate: 23deg;
+}
+#glowfly2{
+    position: absolute;
+    bottom: 900px;
+    scale: 1.4;
+    left: 500px;
+    rotate: 23deg;
+}
+#glowfly4{
+    position: absolute;
+    top: 2300px;
+    scale: 1.4;
+    left: 100px;
+    rotate: -23deg;
+}
+#glowfly3{
+    position: absolute;
+    top: 2850px;
+    scale: 0.8;
+    right: 150px;
+    rotate: -23deg;
+}
+#glowfly5{
+    position: absolute;
+    top: 1400px;
+
+    scale: 1.4;
+    left: 500px;
+    rotate: 23deg;
+}
+#glowfly6{
+    position: absolute;
+    bottom: 200px;
+    scale: 1.2;
+    left: 1200px;
+    rotate: -53deg;
+}
 #upper-div{
     transition: 0.5s ease-out;
     position: absolute;
@@ -90,10 +143,7 @@ body{
     content: "(pre-release 0.1)";
     font-size: 15px;
 }
-#glowfly{
-    position: absolute;
-    z-index: 999;
-}
+
 #upper-div:hover #nav-logs{
     translate: 0px 10px;
 }
