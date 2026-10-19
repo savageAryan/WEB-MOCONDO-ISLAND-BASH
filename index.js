@@ -56,9 +56,12 @@ aboutcon.forEach(content =>{
     })
 })
 
-let images = ["img/image.png",
-    "img/image.png",
-    "img/image1.png",]
+let images = [
+    "img/1.png",
+    "img/2.png",
+    "img/3.png",
+    "img/4.png",
+    "img/5.png"]
 let currentimage = 0;
 let hovertime = null;
     
@@ -132,5 +135,8 @@ ids.forEach(id =>{
 cross.addEventListener("click",()=>{
     bg.classList.remove("show")
 })
-
+const glowfly = document.ElementById("glowfly")
+ document.addEventListener("mousemove",()=>{
+    var mousex = 
+ })
 

@@ -90,6 +90,10 @@ body{
     content: "(pre-release 0.1)";
     font-size: 15px;
 }
+#glowfly{
+    position: absolute;
+    z-index: 999;
+}
 #upper-div:hover #nav-logs{
     translate: 0px 10px;
 }
