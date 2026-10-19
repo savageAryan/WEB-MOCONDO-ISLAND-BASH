@@ -36,13 +36,13 @@ body{
     top: -15px;
     font-weight: bold;
     color: rgb(255, 185, 127);
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px rgb(55, 23, 0);
     font-family: "stylish";
 }
 #upper-div.stretched h1{
     display: none;
 }
-#upper-div.stretched #nav-logs button{
+#upper-div.stretched button{
     display: block;
 } 
 #nav-logs.stretching{
@@ -91,7 +91,7 @@ body{
     font-size: 15px;
 }
 #upper-div:hover #nav-logs{
-    
+    translate: 0px 10px;
 }
 #upper-div button{
     width: 150px;
@@ -112,7 +112,6 @@ body{
     
 }
 #project{
-    display: none;
     position: relative;
     left: 600px;
 }

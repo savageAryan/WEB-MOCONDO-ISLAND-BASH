@@ -83,29 +83,29 @@ const mobs = {
         discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
     },
     glowfly:{
-        name: "capybara",
-        image: "img/.png",
-        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+        name: "Glowfly",
+        image: "img/mocondo butterfly.png",
+        discription: "Glow fly are flowing butterflies or Moths that Roam around the Island and Glow at night, They form Swarms and Soar through the sky, Makes the Macondo world More magical"
     },
     penny:{
         name: "Penny",
-        image: "img/penny.png",
-        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+        image: "img/Penny.png",
+        discription: "A Human stranded in the Island of macondo, She was a office worker while she was in Human world, now she hunts monsters"
     },
     theblob:{
         name: "Blob",
         image: "img/blob.png",
-        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+        discription: "Blob are Cute hostile Monster ready to take a bite from any humans they see, They are part of the demon realm and guard the Island  and The demon town gate"
     },
     chicken:{
         name: "Farmer Chicken",
         image: "img/chicken.png",
-        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+        discription: "A farmer with only one goal to produce as much as he can for the Macondo island's monsters or else they will Not spare his life"
     },
     monkeyking:{
         name: "MonkeyKing",
         image: "img/monkeysolo.png",
-        discription: "Capybara is the sacred mob of the Macondo land,They are friendly and cute until you disturb their slumber, then they become aggressive and nobody can hit them since they are sacred,When they sleep glowflys sit on them and rest making them look even cute"
+        discription: "The sole animal On macondo island who is not scared of the Monsters and fights them, he won't try to engage with them unless they ask for it,Mean time he runs a handy-dandy workshop"
     }
 }
 const ids = document.querySelectorAll(".ids")
