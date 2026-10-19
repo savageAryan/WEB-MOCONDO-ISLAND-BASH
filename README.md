@@ -9,7 +9,9 @@ A website build for my game **'THE MACONDO ISLAND BASH'** , Explaining the world
 * Hover over the video background poping a  Button saying **PLAY NOW!**
 * click on **PLAY NOW!** button
 * Hover over the dis-arranged section arranging the elements
-* hover over and click on the Mobs card, 
+* hover over and click on the Mobs card, to reveal a popup with some details about the mob
+* At last of page a Developer sec with socials click and visit them,
+* click on developer's name ,see it lit up
 ## KNOWN ISSUES:
 * Layout of the page as well the availability of fonts and icons was chosen keeping **CHROME** in mind so other web browsers may not be optimal
 * The layout was designed for desktop screens and might look absurd of other screens
