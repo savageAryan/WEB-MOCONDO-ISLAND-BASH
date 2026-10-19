@@ -1,7 +1,8 @@
 # WEB-MOCONDO-ISLAND-BASH
 A website build for my game **'THE MACONDO ISLAND BASH'** , Explaining the world of macondo island and a bit about my game, serving as a anchor to hold the public documentations,logs,updates and a download page for The game
 <img width="1898" height="920" alt="image" src="https://github.com/user-attachments/assets/5d6ceefb-4b18-411e-a5ed-e9e2855ccb9a" />
-
+## TRY IT YOO!
+## https://savagearyan.github.io/WEB-MOCONDO-ISLAND-BASH/
 # Things To DO:
 * Extend the upper-div(brown header containing nav-logs)
 * click on **PROJECT** button taking to the project page of macondo
